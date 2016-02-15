@@ -50,28 +50,50 @@
               <h3 class="masthead-brand">THE SCHEDULE</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li class="active"><a href="index.html">Home</a></li>
-<!--                   <li><a href="#">Features</a></li>
- -->                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <!-- <li><a href="#">Features</a></li> -->
+                  <li class="active" ><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
             </div>
           </div>
 
           <div class="inner cover">
-          	<div class="row">
-        		<div class="col-md-3"><img alt="The Schedule icon" src="img/icon.png" width=192px></div>
-        		<div class="col-md-9"><h1 class="cover-heading" id="slogan">Always get there on time.</h1>
-            <p class="lead">Download <b>The Schedule</b>. <br> Melbourne's fastest and most dependable transport app.</p>
+            <form id="contact-form">
+                <p>
+                  <div class="row">
+                    <div class="col-sm-3"><label class = "pull-left" for="email">Email address:</label></div>
+                    <div class="col-sm-9"><input type="email" class="form-control" id="email"></div>
+                  </div>
+                </p>
 
-            <!-- android button -->
-            <p>
-            	<a href="https://play.google.com/store/apps/details?id=au.com.taaffe.zentram.pro&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png" width=200px /></a>
-        		</p>
-      			</div>
-          </div>
-
+                <p>
+                  <div class="row">
+                    <div class="col-sm-3" ><label class = "pull-left" for="name">Name:</label></div>
+                    <div class="col-sm-9"><input type="text" class="form-control" id="name"></div>
+                  </div>
+                </p>
             
+                <p>
+                  <div class="row">
+                      <div class="col-sm-3"><label class = "pull-left" for="message">Message:</label></div>
+                      <div class="col-sm-9"><textarea class="form-control" rows="5" id="message"></textarea></div>
+                  </div>
+                </p>
+
+                <p>
+                  <div class="row">
+                      <div class="col-sm-3"></div>
+                      <div class="col-sm-9"><button type="submit" class="btn btn-success btn-block">Send</button></div>
+                  </div>
+                </p>
+
+                <p>
+                  <div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+                </p>
+                
+            </form>
+          </div>            
             
 
           <div class="mastfoot">
@@ -92,10 +114,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to update the slogan randomly -->
-    <script src="js/text.js"></script>
-
+    <script src="js/form.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
